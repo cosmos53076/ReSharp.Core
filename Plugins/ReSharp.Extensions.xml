@@ -1487,10 +1487,18 @@
             Provides utility functions for value type of <see cref="T:System.Single" />.
             </summary>
         </member>
+        <member name="M:ReSharp.Extensions.SingleUtility.GenericParse(System.String)">
+            <summary>
+            Converts the string representation of a number in style of <see cref="F:System.Globalization.NumberStyles.Any"/> and <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/> format
+            to its single-precision floating-point number equivalent.
+            </summary>
+            <param name="s">A string that contains a number to convert.</param>
+            <returns>A single-precision floating-point number equivalent to the numeric value or symbol specified in <c>s</c>. </returns>
+        </member>
         <member name="M:ReSharp.Extensions.SingleUtility.GenericTryParse(System.String,System.Single@)">
             <summary>
-            Converts the string representation of a number to its single-precision floating-point number equivalent with number style <see cref="F:System.Globalization.NumberStyles.Any"/>
-            and format provider <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>. A return value indicates whether the conversion succeeded or failed.
+            Converts the string representation of a number to its single-precision floating-point number equivalent in style of <see cref="F:System.Globalization.NumberStyles.Any"/>
+            and <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/> format. A return value indicates whether the conversion succeeded or failed.
             </summary>
             <param name="s">A string representing a number to convert.</param>
             <param name="result">When this method returns, contains single-precision floating-point number equivalent to the numeric value or symbol contained in <c>s</c>,
