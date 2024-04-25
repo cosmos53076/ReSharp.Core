@@ -10,7 +10,7 @@ namespace ReSharp.Extensions
     /// Provides constants and static methods for trigonometric, logarithmic, and other common
     /// mathematical functions. This class cannot be inherited.
     /// </summary>
-    public sealed class MathUtility
+    public static class MathUtility
     {
         /// <summary>
         /// Generates the random seed.
