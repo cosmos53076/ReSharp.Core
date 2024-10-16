@@ -4,6 +4,144 @@
         <name>ReSharp.Core</name>
     </assembly>
     <members>
+        <member name="T:ReSharp.Compression.Deflate">
+            <summary>
+            Provides methods for compressing and decompressing data by using the Deflate algorithm.
+            </summary>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.Compress(System.Byte[],System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress binary data into binary data by using the Deflate algorithm.
+            </summary>
+            <param name="input">The original binary data. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed binary data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.Compress(System.String,System.Text.Encoding,System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress <see cref="T:System.String"/> which encoded in <c>encoding</c> into binary data by using the Deflate algorithm.
+            </summary>
+            <param name="source">The original <see cref="T:System.String"/>. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original <see cref="T:System.String"/>. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed binary data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.CompressToBase64String(System.Byte[],System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress binary data into Base64 <see cref="T:System.String"/> by using the Deflate algorithm.
+            </summary>
+            <param name="input">The original binary data. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed data which converted to Base64 <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.CompressToBase64String(System.String,System.Text.Encoding,System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress <see cref="T:System.String"/> which encoded in <c>encoding</c> into Base64 <see cref="T:System.String"/> by using the Deflate algorithm.
+            </summary>
+            <param name="source">The original <see cref="T:System.String"/>. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original <see cref="T:System.String"/>. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed data which converted to Base64 <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.Decompress(System.Byte[])">
+            <summary>
+            Decompress into original binary data from input binary data by using the Deflate algorithm.
+            </summary>
+            <param name="input">The compressed binary data. </param>
+            <returns>The original data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.Decompress(System.Byte[],System.Text.Encoding)">
+            <summary>
+            Decompress into <see cref="T:System.String"/> which encoded in <c>encoding</c> from input binary data by using the Deflate algorithm.
+            </summary>
+            <param name="input">The compressed binary data. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original binary data. </param>
+            <returns>The original <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.DecompressFromBase64String(System.String)">
+            <summary>
+            Decompress into binary data from Base64 <see cref="T:System.String"/> by using the Deflate algorithm.
+            </summary>
+            <param name="source">The Bass64 <see cref="T:System.String"/>. </param>
+            <returns>The original data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.Deflate.DecompressFromBase64String(System.String,System.Text.Encoding)">
+            <summary>
+            Decompress into <see cref="T:System.String"/> which encoded in <c>encoding</c> from Base64 <see cref="T:System.String"/> by using the Deflate algorithm.
+            </summary>
+            <param name="source">The Bass64 <see cref="T:System.String"/>. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original binary data. </param>
+            <returns>The original <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="T:ReSharp.Compression.GZip">
+            <summary>
+            Provides methods for compressing and decompressing data by using the GZip data format specification.
+            </summary>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.Compress(System.Byte[],System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress binary data into binary data by using the GZip data format specification.
+            </summary>
+            <param name="input">The original binary data. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed binary data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.Compress(System.String,System.Text.Encoding,System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress <see cref="T:System.String"/> which encoded in <c>encoding</c> into binary data by using the GZip data format specification.
+            </summary>
+            <param name="source">The original <see cref="T:System.String"/>. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original <see cref="T:System.String"/>. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed binary data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.CompressToBase64String(System.Byte[],System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress binary data into Base64 <see cref="T:System.String"/> by using the GZip data format specification.
+            </summary>
+            <param name="input">The original binary data. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed data which converted to Base64 <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.CompressToBase64String(System.String,System.Text.Encoding,System.IO.Compression.CompressionLevel)">
+            <summary>
+            Compress <see cref="T:System.String"/> which encoded in <c>encoding</c> into Base64 <see cref="T:System.String"/> by using the GZip data format specification.
+            </summary>
+            <param name="source">The original <see cref="T:System.String"/>. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original <see cref="T:System.String"/>. </param>
+            <param name="level">One of the enumeration values that indicates whether to emphasize speed or compression efficiency when compressing data to the stream. </param>
+            <returns>The compressed data which converted to Base64 <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.Decompress(System.Byte[])">
+            <summary>
+            Decompress into original binary data from input binary data by using the GZip data format specification.
+            </summary>
+            <param name="input">The compressed binary data. </param>
+            <returns>The original data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.Decompress(System.Byte[],System.Text.Encoding)">
+            <summary>
+            Decompress into <see cref="T:System.String"/> which encoded in <c>encoding</c> from input binary data by using the GZip data format specification.
+            </summary>
+            <param name="input">The compressed binary data. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original binary data. </param>
+            <returns>The original <see cref="T:System.String"/>. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.DecompressFromBase64String(System.String)">
+            <summary>
+            Decompress into binary data from Base64 <see cref="T:System.String"/> by using the GZip data format specification.
+            </summary>
+            <param name="source">The Bass64 <see cref="T:System.String"/>. </param>
+            <returns>The original data. </returns>
+        </member>
+        <member name="M:ReSharp.Compression.GZip.DecompressFromBase64String(System.String,System.Text.Encoding)">
+            <summary>
+            Decompress into <see cref="T:System.String"/> which encoded in <c>encoding</c> from Base64 <see cref="T:System.String"/> by using the GZip data format specification.
+            </summary>
+            <param name="source">The Bass64 <see cref="T:System.String"/>. </param>
+            <param name="encoding">The <see cref="T:System.Text.Encoding"/> instance to get binary data from the original binary data. </param>
+            <returns>The original <see cref="T:System.String"/>. </returns>
+        </member>
         <member name="T:ReSharp.Patterns.Command.AsyncCommand">
             <summary>
             A base <see cref="T:ReSharp.Patterns.Command.IAsyncCommand" /> implementation to execute asynchronous operation.

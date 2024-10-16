@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [1.5.0] - 2024-10-16
+
+### Added
+
+- Adds compression utility class **Deflate**.
+- Adds compression utility class **GZip**.
+
+
+
 ## [1.4.8] - 2024-04-25
 
 ### Added
