@@ -9,6 +9,11 @@
             Provides methods for compressing and decompressing data by using the Deflate algorithm.
             </summary>
         </member>
+        <member name="F:ReSharp.Compression.Deflate.DefaultEncoding">
+            <summary>
+            The default <see cref="T:System.Text.Encoding"/> instance for <see cref="T:System.String"/>.
+            </summary>
+        </member>
         <member name="M:ReSharp.Compression.Deflate.Compress(System.Byte[],System.IO.Compression.CompressionLevel)">
             <summary>
             Compress binary data into binary data by using the Deflate algorithm.
@@ -76,6 +81,11 @@
         <member name="T:ReSharp.Compression.GZip">
             <summary>
             Provides methods for compressing and decompressing data by using the GZip data format specification.
+            </summary>
+        </member>
+        <member name="F:ReSharp.Compression.GZip.DefaultEncoding">
+            <summary>
+            The default <see cref="T:System.Text.Encoding"/> instance for <see cref="T:System.String"/>.
             </summary>
         </member>
         <member name="M:ReSharp.Compression.GZip.Compress(System.Byte[],System.IO.Compression.CompressionLevel)">
