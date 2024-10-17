@@ -13,7 +13,10 @@ namespace ReSharp.Compression
     /// </summary>
     public static class Deflate
     {
-        private static readonly Encoding DefaultEncoding = Encoding.UTF8;
+        /// <summary>
+        /// The default <see cref="System.Text.Encoding"/> instance for <see cref="string"/>.
+        /// </summary>
+        public static readonly Encoding DefaultEncoding = Encoding.UTF8;
         
         /// <summary>
         /// Compress binary data into binary data by using the Deflate algorithm.
